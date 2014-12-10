@@ -16,7 +16,7 @@ static NSString *kCollectionViewCellIdentifier = @"kCollectionViewCellIdentifier
 static NSString *kCollectionViewSectionHeaderIdentifier = @"kCollectionViewSectionHeaderIdentifier";
 static NSString *kCollectionViewSectionFooterIdentifier = @"kCollectionViewSectionFooterIdentifier";
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, SimpleFlowLayoutDelegate>
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MONUniformFlowLayoutDelegate>
 
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) MONUniformFlowLayout *simpleLayout;
