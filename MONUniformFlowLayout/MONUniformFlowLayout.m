@@ -9,31 +9,114 @@
 
 @interface MONUniformFlowLayout ()
 
+/// Used to get the content height of the collection view
 @property (readonly, nonatomic) CGFloat collectionViewContentHeight;
 
+/// Used to get the width of the section's header
 @property (readonly, nonatomic) CGFloat headerWidth;
+
+/// Used to get the width of the section's footer
 @property (readonly, nonatomic) CGFloat footerWidth;
 
+/// Used to get the number of sections
 @property (readonly, nonatomic) NSInteger numberOfSections;
+
+/// Used to get the spacing between sections
 @property (readonly, nonatomic) CGFloat sectionSpacing;
 
+/**
+ * Computes the height of an item in a section
+ * @param section The section that needs the height for it's item
+ * @return The height for all items in a section
+ */
 - (CGFloat)computeItemHeightInSection:(NSInteger)section;
+
+/**
+ * Computes the total spacing (origin-y) between items in a section
+ * @param section The section that needs the total spacing between items
+ * @return The total spacing between items in a section
+ */
 - (CGFloat)computeTotalInterItemSpacingYInSection:(NSInteger)section;
+
+/**
+ * Computes the total height for all the items in a section
+ * @param section The section that needs the total height for all items
+ * @return The total height for all items in a section
+ */
 - (CGFloat)computeTotalItemHeightInSection:(NSInteger)section;
+
+/**
+ * Computes the origin-y of an item in a section
+ * @param section The section that needs the origin-y of an item
+ * @return The origin-y of an item in a section
+ */
 - (CGFloat)computePositionYInSection:(NSInteger)section;
 
+/**
+ * Computes the origin-y of the header in a section
+ * @param section The section that needs the origin-y of the header
+ * @return The origin-y of the header in a section
+ */
 - (CGFloat)computeHeaderPositionYInSection:(NSInteger)section;
+
+/**
+ * Computes the origin-y of the footer in a section
+ * @param section The section that needs the origin-y of the footer
+ * @return The origin-y of the footer in a section
+ */
 - (CGFloat)computeFooterPositionYInSection:(NSInteger)section;
 
+/**
+ * Gets the number of rows in a section
+ * @param section The section that needs it's number of rows
+ * @return Number of rows in a section
+ */
 - (NSInteger)getNumberOfRowsInSection:(NSInteger)section;
+
+/**
+ * Gets the number of items in a section
+ * @param section The section that needs it's number of items
+ * @return Number of items in a section
+ */
 - (NSInteger)getNumberOfItemsInSection:(NSInteger)section;
+
+/**
+ * Gets the number of columns in a section
+ * @param section The section that needs it's number of columns
+ # @return Number of columns in a section
+ */
 - (NSInteger)getNumberOfColumnsInSection:(NSInteger)section;
 
+/**
+ * Gets the height of the section's header
+ * @param section The section that needs the header height
+ * @return Height of the header in a section
+ */
 - (CGFloat)getHeaderHeightInSection:(NSInteger)section;
+
+/**
+ * Gets the height of the section's footer
+ * @param section The section that needs the footer height
+ * @return Height of the footer in a section
+ */
 - (CGFloat)getFooterHeightInSection:(NSInteger)section;
 
+/**
+ * Modifies the attributes of an item relative to the collection view
+ * @param indexPath The targeted indexPath of the item's attributes to modify
+ */
 - (void)modifyItemAttributes:(UICollectionViewLayoutAttributes *)attributes indexPath:(NSIndexPath *)indexPath;
+
+/**
+ * Modifies the attributes of a section's header relative to the collection view
+ * @param section The section of the header's attributes to modify
+ */
 - (void)modifyHeaderAttributes:(UICollectionViewLayoutAttributes *)attributes section:(NSInteger)section;
+
+/**
+ * Modifies the attributes of a section's footer relative to the collection view
+ * @param section The section of the footer's attributes to modify
+ */
 - (void)modifyFooterAttributes:(UICollectionViewLayoutAttributes *)attributes section:(NSInteger)section;
 
 @end
@@ -66,7 +149,7 @@
 }
 
 - (void)modifyHeaderAttributes:(UICollectionViewLayoutAttributes *)attributes section:(NSInteger)section {
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     
     CGRect frame = attributes.frame;
     frame.origin.x = -self.collectionView.contentInset.left;
@@ -78,7 +161,7 @@
 }
 
 - (void)modifyFooterAttributes:(UICollectionViewLayoutAttributes *)attributes section:(NSInteger)section {
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     
     CGRect frame = attributes.frame;
     frame.origin.x = -self.collectionView.contentInset.left;
@@ -171,7 +254,7 @@
     if (section < 0) {
         return 0;
     }
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     CGFloat headerHeight = 0;
     if (delegate && [delegate respondsToSelector:@selector(collectionView:layout:headerHeightInSection:)]) {
         headerHeight = [delegate collectionView:self.collectionView layout:self headerHeightInSection:section];
@@ -183,7 +266,7 @@
     if (section < 0) {
         return 0;
     }
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     CGFloat footerHeight = 0;
     if (delegate && [delegate respondsToSelector:@selector(collectionView:layout:footerHeightInSection:)]) {
         footerHeight = [delegate collectionView:self.collectionView layout:self footerHeightInSection:section];
@@ -224,7 +307,7 @@
 #pragma mark - Item Size in Section
 
 - (CGFloat)computeItemWidthInSection:(NSInteger)section {
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     NSUInteger numberOfColumnsInSection = [delegate collectionView:self.collectionView layout:self numberOfColumnsInSection:section];
     CGFloat deductions = self.collectionView.contentInset.left + self.collectionView.contentInset.right + (self.interItemSpacing.x * (numberOfColumnsInSection - 1));
     CGFloat width = (self.collectionView.frame.size.width - deductions) / numberOfColumnsInSection;
@@ -232,7 +315,7 @@
 }
 
 - (CGFloat)computeItemHeightInSection:(NSInteger)section {
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     CGFloat height = [delegate collectionView:self.collectionView layout:self itemHeightInSection:section];
     return height;
 }
@@ -257,7 +340,7 @@
 }
 
 - (CGFloat)sectionSpacing {
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     CGFloat sectionSpacing = 0;
     if (delegate && [delegate respondsToSelector:@selector(collectionView:sectionSpacingForlayout:)]) {
         sectionSpacing = [delegate collectionView:self.collectionView sectionSpacingForlayout:self];
@@ -284,7 +367,7 @@
     if (section < 0) {
         return 0;
     }
-    id<SimpleFlowLayoutDelegate> delegate = (id<SimpleFlowLayoutDelegate>)self.collectionView.delegate;
+    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
     NSInteger numberOfColumns = 1;
     if (delegate && [delegate respondsToSelector:@selector(collectionView:layout:numberOfColumnsInSection:)]) {
         numberOfColumns = [delegate collectionView:self.collectionView layout:self numberOfColumnsInSection:section];
