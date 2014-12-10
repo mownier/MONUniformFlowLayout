@@ -1,0 +1,49 @@
+{
+    "sections": [
+        {
+            "item_height": 100,
+            "header_height": 40,
+            "footer_height": 40,
+            "portrait_number_of_columns": 3,
+            "landscape_number_of_columns": 2,
+            "number_of_items": 20,
+            "item_color": "0x15ab12",
+            "header_color": "0x984acc",
+            "footer_color": "0xbcd112"
+        },
+        {
+            "item_height": 75,
+            "header_height": 40,
+            "footer_height": 40,
+            "portrait_number_of_columns": 4,
+            "landscape_number_of_columns": 2,
+            "number_of_items": 10,
+            "item_color": "0xab123d",
+            "header_color": "0x5fe1e1",
+            "footer_color": "0xb58a24"
+        },
+        {
+            "item_height": 75,
+            "header_height": 40,
+            "footer_height": 40,
+            "portrait_number_of_columns": 3,
+            "landscape_number_of_columns": 2,
+            "number_of_items": 80,
+            "item_color": "0x2d34c1",
+            "header_color": "0xf122c2",
+            "footer_color": "0x23443c"
+        }
+    ],
+    "content_inset": {
+        "top": 0,
+        "left": 10,
+        "bottom": 0,
+        "right": 10
+    },
+    "item_spacing": {
+        "horizontal": 10,
+        "vertical": 20
+    },
+    "section_spacing": 0,
+    "sticky_header": true
+}

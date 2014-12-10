@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF03B8F81A3828E1007E23DB /* MONUniformFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B8F71A3828E1007E23DB /* MONUniformFlowLayout.m */; };
+		DF03B90C1A382B4B007E23DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B8FF1A382B4B007E23DB /* AppDelegate.m */; };
+		DF03B90D1A382B4B007E23DB /* CollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B9011A382B4B007E23DB /* CollectionFooterView.m */; };
+		DF03B90E1A382B4B007E23DB /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B9031A382B4B007E23DB /* CollectionHeaderView.m */; };
+		DF03B90F1A382B4B007E23DB /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B9051A382B4B007E23DB /* CollectionViewCell.m */; };
+		DF03B9101A382B4B007E23DB /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = DF03B9061A382B4B007E23DB /* default.json */; };
+		DF03B9111A382B4B007E23DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF03B9071A382B4B007E23DB /* Images.xcassets */; };
+		DF03B9121A382B4B007E23DB /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B9091A382B4B007E23DB /* InputViewController.m */; };
+		DF03B9131A382B4B007E23DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B90B1A382B4B007E23DB /* ViewController.m */; };
+		DF03B91A1A382B94007E23DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B9181A382B94007E23DB /* main.m */; };
+		DF03B91C1A382D49007E23DB /* Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF03B91B1A382D49007E23DB /* Dummy.m */; };
+		DF03B91D1A382EA8007E23DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF03B9141A382B5E007E23DB /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF7F16CC1A2D86CD00EF7DB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7F16AA1A2D86CD00EF7DB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7F16B11A2D86CD00EF7DB4;
+			remoteInfo = CollectionSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF03B8F61A3828E1007E23DB /* MONUniformFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONUniformFlowLayout.h; sourceTree = "<group>"; };
+		DF03B8F71A3828E1007E23DB /* MONUniformFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONUniformFlowLayout.m; sourceTree = "<group>"; };
+		DF03B8FA1A382B19007E23DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF03B8FE1A382B4B007E23DB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MONUniformFlowLayoutSample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		DF03B8FF1A382B4B007E23DB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MONUniformFlowLayoutSample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		DF03B9001A382B4B007E23DB /* CollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionFooterView.h; path = MONUniformFlowLayoutSample/CollectionFooterView.h; sourceTree = SOURCE_ROOT; };
+		DF03B9011A382B4B007E23DB /* CollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionFooterView.m; path = MONUniformFlowLayoutSample/CollectionFooterView.m; sourceTree = SOURCE_ROOT; };
+		DF03B9021A382B4B007E23DB /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionHeaderView.h; path = MONUniformFlowLayoutSample/CollectionHeaderView.h; sourceTree = SOURCE_ROOT; };
+		DF03B9031A382B4B007E23DB /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionHeaderView.m; path = MONUniformFlowLayoutSample/CollectionHeaderView.m; sourceTree = SOURCE_ROOT; };
+		DF03B9041A382B4B007E23DB /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = MONUniformFlowLayoutSample/CollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		DF03B9051A382B4B007E23DB /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = MONUniformFlowLayoutSample/CollectionViewCell.m; sourceTree = SOURCE_ROOT; };
+		DF03B9061A382B4B007E23DB /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = default.json; path = MONUniformFlowLayoutSample/default.json; sourceTree = SOURCE_ROOT; };
+		DF03B9071A382B4B007E23DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MONUniformFlowLayoutSample/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		DF03B9081A382B4B007E23DB /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputViewController.h; path = MONUniformFlowLayoutSample/InputViewController.h; sourceTree = SOURCE_ROOT; };
+		DF03B9091A382B4B007E23DB /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputViewController.m; path = MONUniformFlowLayoutSample/InputViewController.m; sourceTree = SOURCE_ROOT; };
+		DF03B90A1A382B4B007E23DB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MONUniformFlowLayoutSample/ViewController.h; sourceTree = SOURCE_ROOT; };
+		DF03B90B1A382B4B007E23DB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MONUniformFlowLayoutSample/ViewController.m; sourceTree = SOURCE_ROOT; };
+		DF03B9151A382B5E007E23DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MONUniformFlowLayoutSample/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		DF03B9171A382B94007E23DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MONUniformFlowLayoutSample/Info.plist; sourceTree = SOURCE_ROOT; };
+		DF03B9181A382B94007E23DB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MONUniformFlowLayoutSample/main.m; sourceTree = SOURCE_ROOT; };
+		DF03B91B1A382D49007E23DB /* Dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dummy.m; sourceTree = "<group>"; };
+		DF7F16B21A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MONUniformFlowLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7F16CB1A2D86CD00EF7DB4 /* MONUniformFlowLayoutSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MONUniformFlowLayoutSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF7F16AF1A2D86CD00EF7DB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7F16C81A2D86CD00EF7DB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF03B8F51A3828E1007E23DB /* MONUniformFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DF03B8F61A3828E1007E23DB /* MONUniformFlowLayout.h */,
+				DF03B8F71A3828E1007E23DB /* MONUniformFlowLayout.m */,
+			);
+			path = MONUniformFlowLayout;
+			sourceTree = SOURCE_ROOT;
+		};
+		DF03B8F91A382B19007E23DB /* MONUniformFlowLayoutSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF03B8FA1A382B19007E23DB /* Info.plist */,
+				DF03B91B1A382D49007E23DB /* Dummy.m */,
+			);
+			path = MONUniformFlowLayoutSampleTests;
+			sourceTree = "<group>";
+		};
+		DF7F16A91A2D86CD00EF7DB4 = {
+			isa = PBXGroup;
+			children = (
+				DF7F16B41A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample */,
+				DF03B8F91A382B19007E23DB /* MONUniformFlowLayoutSampleTests */,
+				DF7F16B31A2D86CD00EF7DB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF7F16B31A2D86CD00EF7DB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF7F16B21A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample.app */,
+				DF7F16CB1A2D86CD00EF7DB4 /* MONUniformFlowLayoutSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF7F16B41A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample */ = {
+			isa = PBXGroup;
+			children = (
+				DF03B8FE1A382B4B007E23DB /* AppDelegate.h */,
+				DF03B8FF1A382B4B007E23DB /* AppDelegate.m */,
+				DF03B9001A382B4B007E23DB /* CollectionFooterView.h */,
+				DF03B9011A382B4B007E23DB /* CollectionFooterView.m */,
+				DF03B9021A382B4B007E23DB /* CollectionHeaderView.h */,
+				DF03B9031A382B4B007E23DB /* CollectionHeaderView.m */,
+				DF03B9041A382B4B007E23DB /* CollectionViewCell.h */,
+				DF03B9051A382B4B007E23DB /* CollectionViewCell.m */,
+				DF03B9061A382B4B007E23DB /* default.json */,
+				DF03B9071A382B4B007E23DB /* Images.xcassets */,
+				DF03B9081A382B4B007E23DB /* InputViewController.h */,
+				DF03B9091A382B4B007E23DB /* InputViewController.m */,
+				DF03B9141A382B5E007E23DB /* LaunchScreen.xib */,
+				DF03B8F51A3828E1007E23DB /* MONUniformFlowLayout */,
+				DF7F16B51A2D86CD00EF7DB4 /* Supporting Files */,
+				DF03B90A1A382B4B007E23DB /* ViewController.h */,
+				DF03B90B1A382B4B007E23DB /* ViewController.m */,
+			);
+			name = MONUniformFlowLayoutSample;
+			path = CollectionSample;
+			sourceTree = "<group>";
+		};
+		DF7F16B51A2D86CD00EF7DB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF03B9171A382B94007E23DB /* Info.plist */,
+				DF03B9181A382B94007E23DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF7F16B11A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7F16D51A2D86CD00EF7DB4 /* Build configuration list for PBXNativeTarget "MONUniformFlowLayoutSample" */;
+			buildPhases = (
+				DF7F16AE1A2D86CD00EF7DB4 /* Sources */,
+				DF7F16AF1A2D86CD00EF7DB4 /* Frameworks */,
+				DF7F16B01A2D86CD00EF7DB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MONUniformFlowLayoutSample;
+			productName = CollectionSample;
+			productReference = DF7F16B21A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF7F16CA1A2D86CD00EF7DB4 /* MONUniformFlowLayoutSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7F16D81A2D86CD00EF7DB4 /* Build configuration list for PBXNativeTarget "MONUniformFlowLayoutSampleTests" */;
+			buildPhases = (
+				DF7F16C71A2D86CD00EF7DB4 /* Sources */,
+				DF7F16C81A2D86CD00EF7DB4 /* Frameworks */,
+				DF7F16C91A2D86CD00EF7DB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7F16CD1A2D86CD00EF7DB4 /* PBXTargetDependency */,
+			);
+			name = MONUniformFlowLayoutSampleTests;
+			productName = CollectionSampleTests;
+			productReference = DF7F16CB1A2D86CD00EF7DB4 /* MONUniformFlowLayoutSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF7F16AA1A2D86CD00EF7DB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = mownier;
+				TargetAttributes = {
+					DF7F16B11A2D86CD00EF7DB4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					DF7F16CA1A2D86CD00EF7DB4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = DF7F16B11A2D86CD00EF7DB4;
+					};
+				};
+			};
+			buildConfigurationList = DF7F16AD1A2D86CD00EF7DB4 /* Build configuration list for PBXProject "MONUniformFlowLayoutSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF7F16A91A2D86CD00EF7DB4;
+			productRefGroup = DF7F16B31A2D86CD00EF7DB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF7F16B11A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample */,
+				DF7F16CA1A2D86CD00EF7DB4 /* MONUniformFlowLayoutSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF7F16B01A2D86CD00EF7DB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF03B91D1A382EA8007E23DB /* LaunchScreen.xib in Resources */,
+				DF03B9111A382B4B007E23DB /* Images.xcassets in Resources */,
+				DF03B9101A382B4B007E23DB /* default.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7F16C91A2D86CD00EF7DB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF7F16AE1A2D86CD00EF7DB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF03B9121A382B4B007E23DB /* InputViewController.m in Sources */,
+				DF03B90F1A382B4B007E23DB /* CollectionViewCell.m in Sources */,
+				DF03B9131A382B4B007E23DB /* ViewController.m in Sources */,
+				DF03B8F81A3828E1007E23DB /* MONUniformFlowLayout.m in Sources */,
+				DF03B90C1A382B4B007E23DB /* AppDelegate.m in Sources */,
+				DF03B90D1A382B4B007E23DB /* CollectionFooterView.m in Sources */,
+				DF03B91A1A382B94007E23DB /* main.m in Sources */,
+				DF03B90E1A382B4B007E23DB /* CollectionHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7F16C71A2D86CD00EF7DB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF03B91C1A382D49007E23DB /* Dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF7F16CD1A2D86CD00EF7DB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7F16B11A2D86CD00EF7DB4 /* MONUniformFlowLayoutSample */;
+			targetProxy = DF7F16CC1A2D86CD00EF7DB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF03B9141A382B5E007E23DB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF03B9151A382B5E007E23DB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF7F16D31A2D86CD00EF7DB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF7F16D41A2D86CD00EF7DB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF7F16D61A2D86CD00EF7DB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MONUniformFlowLayoutSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = MONUniformFlowLayoutSample;
+			};
+			name = Debug;
+		};
+		DF7F16D71A2D86CD00EF7DB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MONUniformFlowLayoutSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = MONUniformFlowLayoutSample;
+			};
+			name = Release;
+		};
+		DF7F16D91A2D86CD00EF7DB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MONUniformFlowLayoutSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = MONUniformFlowLayoutSampleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MONUniformFlowLayoutSample.app/MONUniformFlowLayoutSample";
+			};
+			name = Debug;
+		};
+		DF7F16DA1A2D86CD00EF7DB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MONUniformFlowLayoutSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = MONUniformFlowLayoutSampleTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MONUniformFlowLayoutSample.app/MONUniformFlowLayoutSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF7F16AD1A2D86CD00EF7DB4 /* Build configuration list for PBXProject "MONUniformFlowLayoutSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7F16D31A2D86CD00EF7DB4 /* Debug */,
+				DF7F16D41A2D86CD00EF7DB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7F16D51A2D86CD00EF7DB4 /* Build configuration list for PBXNativeTarget "MONUniformFlowLayoutSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7F16D61A2D86CD00EF7DB4 /* Debug */,
+				DF7F16D71A2D86CD00EF7DB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7F16D81A2D86CD00EF7DB4 /* Build configuration list for PBXNativeTarget "MONUniformFlowLayoutSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7F16D91A2D86CD00EF7DB4 /* Debug */,
+				DF7F16DA1A2D86CD00EF7DB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF7F16AA1A2D86CD00EF7DB4 /* Project object */;
+}
