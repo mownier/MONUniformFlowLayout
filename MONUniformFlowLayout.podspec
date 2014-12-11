@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = 'MONUniformFlowLayout'
     s.version = '0.0.1'
-    s.summary = ''
+    s.summary = 'A simple flow layout the handles the arrangement of the items in a collection view uniformly based on the given number of columns, height of the item, inter item spacing, header height, and footer height for a particular section.'
     s.platform = :ios, '7.0'
     s.license = { :type => 'MIT', :file => 'LICENSE' }
     s.homepage = 'https://github.com/mownier/MONUniformFlowLayout'
