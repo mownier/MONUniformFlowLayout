@@ -403,7 +403,7 @@
 #pragma mark -
 #pragma mark - Overidden Setters and Getterss
 
-- (void)setInterItemSpacing:(InterItemSpacing)interItemSpacing {
+- (void)setInterItemSpacing:(MONInterItemSpacing)interItemSpacing {
     _interItemSpacing = interItemSpacing;
     [self invalidateLayout];
 }

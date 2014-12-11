@@ -93,7 +93,7 @@ static NSString *kCollectionViewSectionFooterIdentifier = @"kCollectionViewSecti
     if (!_simpleLayout) {
         _simpleLayout = [[MONUniformFlowLayout alloc] init];
         NSDictionary *itemSpacingInfo = [self.inputInfo objectForKey:@"item_spacing"];
-        _simpleLayout.interItemSpacing = InterItemSpacingMake([[itemSpacingInfo objectForKey:@"horizontal"] floatValue],
+        _simpleLayout.interItemSpacing = MONInterItemSpacingMake([[itemSpacingInfo objectForKey:@"horizontal"] floatValue],
                                                               [[itemSpacingInfo objectForKey:@"vertical"] floatValue]);
         _simpleLayout.enableStickyHeader = [[self.inputInfo objectForKey:@"sticky_header"] boolValue];
     }

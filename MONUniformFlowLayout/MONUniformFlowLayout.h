@@ -10,22 +10,22 @@
 /**
  * Spacing for the items
  */
-typedef struct InterItemSpacing {
+typedef struct MONInterItemSpacing {
     CGFloat x, y;
-} InterItemSpacing;
+} MONInterItemSpacing;
 
 /**
  * Creates an InterItemSpacing struct
  */
-static inline InterItemSpacing InterItemSpacingMake(CGFloat x, CGFloat y) {
-    InterItemSpacing spacing = {x, y};
+static inline MONInterItemSpacing MONInterItemSpacingMake(CGFloat x, CGFloat y) {
+    MONInterItemSpacing spacing = {x, y};
     return spacing;
 }
 
 @interface MONUniformFlowLayout : UICollectionViewFlowLayout
 
 /// The inter spacing for all items
-@property (readwrite, nonatomic) InterItemSpacing interItemSpacing;
+@property (readwrite, nonatomic) MONInterItemSpacing interItemSpacing;
 
 /// Condition to enable/disable sticky headers
 @property (readwrite, nonatomic) BOOL enableStickyHeader;
