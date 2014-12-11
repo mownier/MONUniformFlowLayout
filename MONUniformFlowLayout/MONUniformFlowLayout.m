@@ -234,7 +234,7 @@
     NSInteger lastSection = self.numberOfSections - 1;
     CGFloat height = [self computePositionYInSection:lastSection] + [self getFooterHeightInSection:lastSection] + [self computeTotalInterItemSpacingYInSection:lastSection] + [self computeTotalItemHeightInSection:lastSection];
     
-    return MAX(height, self.collectionView.frame.size.height);
+    return MAX(height, self.collectionView.frame.size.height + 1);
 }
 
 #pragma mark -
