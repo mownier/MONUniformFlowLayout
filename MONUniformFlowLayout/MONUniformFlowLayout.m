@@ -303,16 +303,24 @@
 #pragma mark - Item Size in Section
 
 - (CGFloat)computeItemWidthInSection:(NSInteger)section {
-    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
-    NSUInteger numberOfColumnsInSection = [delegate collectionView:self.collectionView layout:self numberOfColumnsInSection:section];
+    if (section < 0) {
+        return 0.0f;
+    }
+    NSUInteger numberOfColumnsInSection = [self getNumberOfColumnsInSection:section];
     CGFloat deductions = self.collectionView.contentInset.left + self.collectionView.contentInset.right + (self.interItemSpacing.x * (numberOfColumnsInSection - 1));
     CGFloat width = (self.collectionView.frame.size.width - deductions) / numberOfColumnsInSection;
     return width;
 }
 
 - (CGFloat)computeItemHeightInSection:(NSInteger)section {
+    if (section < 0) {
+        return 0.0f;
+    }
     id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
-    CGFloat height = [delegate collectionView:self.collectionView layout:self itemHeightInSection:section];
+    CGFloat height = 0;
+    if (delegate && [delegate respondsToSelector:@selector(collectionView:layout:itemHeightInSection:)]) {
+        height = [delegate collectionView:self.collectionView layout:self itemHeightInSection:section];
+    }
     return height;
 }
 
