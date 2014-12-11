@@ -134,9 +134,11 @@
 #pragma mark - Attributes Modification
 
 - (void)modifyItemAttributes:(UICollectionViewLayoutAttributes *)attributes indexPath:(NSIndexPath *)indexPath {
+    NSUInteger numberOfColumnsInSection = [self getNumberOfColumnsInSection:indexPath.section];
+    assert(numberOfColumnsInSection > 0);
     NSInteger currentSection = indexPath.section;
-    NSInteger currentRow = indexPath.row / [self getNumberOfColumnsInSection:currentSection];
-    NSInteger currentColumn = indexPath.row % [self getNumberOfColumnsInSection:currentSection];
+    NSInteger currentRow = indexPath.row / numberOfColumnsInSection;
+    NSInteger currentColumn = indexPath.row % numberOfColumnsInSection;
     
     CGRect frame = attributes.frame;
     
