@@ -335,7 +335,10 @@
 #pragma mark - Sections
 
 - (NSInteger)numberOfSections {
-    NSInteger numberOfSections = [self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView];
+    NSInteger numberOfSections = 1;
+    if (self.collectionView && self.collectionView.dataSource && [self.collectionView.dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
+        numberOfSections = [self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView];
+    }
     return numberOfSections;
 }
 
