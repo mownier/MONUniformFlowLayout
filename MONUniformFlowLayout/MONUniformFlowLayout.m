@@ -149,25 +149,21 @@
 }
 
 - (void)modifyHeaderAttributes:(UICollectionViewLayoutAttributes *)attributes section:(NSInteger)section {
-    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
-    
     CGRect frame = attributes.frame;
     frame.origin.x = -self.collectionView.contentInset.left;
     frame.origin.y = [self computeHeaderPositionYInSection:section];
     frame.size.width = self.headerWidth;
-    frame.size.height = [delegate collectionView:self.collectionView layout:self headerHeightInSection:section];
+    frame.size.height = [self getHeaderHeightInSection:section];
     attributes.frame = frame;
     attributes.zIndex = 1024;
 }
 
 - (void)modifyFooterAttributes:(UICollectionViewLayoutAttributes *)attributes section:(NSInteger)section {
-    id<MONUniformFlowLayoutDelegate> delegate = (id<MONUniformFlowLayoutDelegate>)self.collectionView.delegate;
-    
     CGRect frame = attributes.frame;
     frame.origin.x = -self.collectionView.contentInset.left;
     frame.origin.y = [self computeFooterPositionYInSection:section];
     frame.size.width = self.footerWidth;
-    frame.size.height = [delegate collectionView:self.collectionView layout:self footerHeightInSection:section];
+    frame.size.height = [self getFooterHeightInSection:section];
     attributes.frame = frame;
     attributes.zIndex = 1024;
 }
